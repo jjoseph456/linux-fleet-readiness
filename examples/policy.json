@@ -1,0 +1,9 @@
+{
+  "max_patch_age_days": 30,
+  "supported_os_families": [
+    "rhel",
+    "ubuntu",
+    "suse"
+  ]
+}
+

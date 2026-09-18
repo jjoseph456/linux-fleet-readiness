@@ -1,0 +1,43 @@
+{
+  "hosts": [
+    {
+      "name": "web-prod-01",
+      "environment": "production",
+      "owner": "digital-platform",
+      "os_family": "rhel",
+      "patch_age_days": 58,
+      "monitoring_enabled": true,
+      "backup_verified": false,
+      "encryption_enabled": true,
+      "dependencies": [
+        "payments-api"
+      ],
+      "approved_for_decommission": false
+    },
+    {
+      "name": "batch-dev-02",
+      "environment": "development",
+      "owner": "data-services",
+      "os_family": "ubuntu",
+      "patch_age_days": 12,
+      "monitoring_enabled": true,
+      "backup_verified": true,
+      "encryption_enabled": true,
+      "dependencies": [],
+      "approved_for_decommission": true
+    },
+    {
+      "name": "legacy-test-03",
+      "environment": "test",
+      "owner": "quality-engineering",
+      "os_family": "legacy-linux",
+      "patch_age_days": 95,
+      "monitoring_enabled": false,
+      "backup_verified": true,
+      "encryption_enabled": false,
+      "dependencies": [],
+      "approved_for_decommission": false
+    }
+  ]
+}
+
